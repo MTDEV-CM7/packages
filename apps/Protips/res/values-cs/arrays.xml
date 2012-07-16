@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="tips">
+        <item msgid="4457112202911142877">"Jak zobrazit všechny aplikace"\n" Dotkněte se ikony spouštěče. @drawable/all_apps"</item>
+        <item>Pravidla\nJediné pravidlo CyanogenMod: neptejte se, kdy to bude hotové!!!</item>
+        <item>Noční sestavení (pro pokročilé)\nDostupné z ROM Managera. Ale pak neposílejte reporty problémů chyb v kóodu Google. @drawable/rommanager</item>
+        <item msgid="8842580895829057430">"Přetáhněte si aplikace na plochu."\n" Dotkněte se aplikace v nástroji Launcher a podržte ji, dokud nezačne vibrovat."</item>
+        <item>Neposlouchejte Dr. Kmobse\nOn není opravdový doktor a teploměr také ne. @drawable/stethoscope</item>
+        <item msgid="8903218961940756528">"Jak si uspořádat plochu"\n" Dotkněte se položky a podržte ji. Jakmile začne vibrovat, přetáhněte ji, kam chcete."</item>
+        <item>Ballmerův vrchol\nOptimální schopnost programovat se nachází někde mezi indexem alkoholu v krvi .129 a .138.</item>
+        <item msgid="3123213860439458492">"Jak odstranit položky"\n" Přidržte vybranou položku. Jakmile začne vibrovat, přetáhněte ji do koše. @drawable/trash"</item>
+        <item>iPhone\nDržíte jej špatně. Vždycky.</item>
+        <item msgid="1000948398885889319">"Více ploch"\n" Přejeďte prstem po obrazovce doleva nebo doprava. Položky lze přetáhnout na jinou obrazovku."</item>
+        <item>Priorita číslo 1\nNezapomínej udržovat WinZIP v aktualizované verzi.</item>
+        <item>Kang [kayng] - (sloveso)\nAktualizován můj WinZIP br0. Poděkování mé trpělivé přítelkyni, že mě nechává si hrát s mojí hračkou. @drawable/kang_truck</item>
+        <item>Definice slovíčka \'Otevřený\'\nrepo init -u git://android.git.kernel.org/platform/manifest.git ; repo sync ; make. @drawable/android_open </item>
+        <item>Kočkoustovač\nVždy svojí elektroniku udělejte kočkoodolné. Kočky velice přitahuje a dělají si z ní záchodek. @drawable/cat_attack</item>
+        <item msgid="424487960942281801">"Widget už nepotřebujete?"\n" Přidržte jej a jakmile začne vibrovat, přetáhněte jej na ikonu koše."</item>
+    </string-array>
+</resources>

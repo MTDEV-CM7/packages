@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Hľadať"</string>
+    <string name="search_widget">"Hľadať"</string>
+    <string name="search_widget_config_ok">"OK"</string>
+    <string name="corpus_selection_heading">"Hľadať"</string>
+    <string name="corpus_selection_edit_items">"Pridať alebo odobrať"</string>
+    <string name="corpus_label_global">"Všetko"</string>
+    <string name="corpus_label_web">"Web"</string>
+    <string name="corpus_description_web">"Vyhľadávanie na webe, záložky a história prehliadača"</string>
+    <string name="corpus_label_apps">"Aplikácie"</string>
+    <string name="corpus_description_apps">"Názvy inštalovaných aplikácií"</string>
+    <string name="corpus_hint_apps">"Hľadať v Aplikáciách"</string>
+    <string name="corpus_label_apps_market">"Aplikácie a služba Market"</string>
+    <string name="corpus_description_apps_market">"Inštalované aplikácie a aplikácie zo služby Market"</string>
+    <string name="corpus_hint_apps_market">"Hľadať v Aplikáciách a službe Market"</string>
+    <string name="menu_settings">"Nastavenia vyhľadávania"</string>
+    <string name="search_settings">"Nastavenia vyhľadávania"</string>
+    <string name="web_search_category_title">"Web"</string>
+    <string name="system_search_category_title">"Telefón"</string>
+    <string name="search_sources">"Vyhľadávateľné položky"</string>
+    <string name="search_sources_summary">"Vyberte, čo chcete v telefóne vyhľadať"</string>
+    <string name="clear_shortcuts">"Vymazať odkazy"</string>
+    <string name="clear_shortcuts_summary">"Vymazať odkazy na nedávno zvolené návrhy vyhľadávania"</string>
+    <string name="clear_shortcuts_prompt">"Tento krok vymaže všetky odkazy odkazujúce na nedávno zvolené návrhy vyhľadávania."\n\n"(Ak chcete vymazať históriu prehliadača, použite nastavenia prehliadača.)"</string>
+    <string name="agree">"OK"</string>
+    <string name="disagree">"Zrušiť"</string>
+    <string name="google_search_label">"Google"</string>
+    <string name="google_app_label">"Vyhľadávanie Google"</string>
+    <string name="google_search_hint">"Vyhľadávanie Google"</string>
+    <string name="google_search_description">"Návrhy vyhľadávania Google"</string>
+    <string name="google_search_settings">"Vyhľadávanie Google"</string>
+    <string name="google_show_web_suggestions">"Zobrazovať návrhy webov"</string>
+    <string name="google_show_web_suggestions_summary_enabled">"Pri písaní zobrazovať návrhy od Google"</string>
+    <string name="google_show_web_suggestions_summary_disabled">"Pri písaní nezobrazovať návrhy od Google"</string>
+    <string name="voice_search_hint_title">"Skúste vysloviť:"</string>
+    <string name="voice_search_hint_quotation_start">"„"</string>
+    <string name="voice_search_hint_quotation_end">"“"</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/general_title"
+        android:key="pref_category_button_settings">
+
+        <PreferenceScreen android:key="lockscreen_stylecfg"
+            android:title="@string/pref_lockscreen_stylecfg_title"
+            android:summary="@string/pref_lockscreen_stylecfg_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.LockscreenStyleActivity" />
+        </PreferenceScreen>
+
+        <PreferenceScreen android:key="lockscreen_widgets"
+            android:title="@string/pref_lockscreen_widgets_title"
+            android:summary="@string/pref_lockscreen_widgets_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.LockscreenWidgetsActivity" />
+        </PreferenceScreen>
+
+        <PreferenceScreen android:key="lockscreen_unlock"
+            android:title="@string/pref_lockscreen_unlock_title"
+            android:summary="@string/pref_lockscreen_unlock_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.LockscreenUnlockActivity" />
+        </PreferenceScreen>
+
+        <PreferenceScreen android:key="lockscreen_gestures"
+            android:title="@string/pref_lockscreen_gesture_title"
+            android:summary="@string/pref_lockscreen_gesture_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.GestureMenuActivity" />
+        </PreferenceScreen>
+
+        <PreferenceScreen android:key="lockscreen_timeout"
+            android:title="@string/pref_lockscreen_timeout_title"
+            android:summary="@string/pref_lockscreen_timeout_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.LockscreenTimeoutActivity" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

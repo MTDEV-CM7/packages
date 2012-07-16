@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+        android:title="@string/call_settings">
+
+    <PreferenceScreen
+        android:key="button_fdn_key"
+        android:title="@string/fdn"
+        android:summary="@string/sum_fdn"
+        android:persistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.phone"
+            android:targetClass="com.android.phone.FdnSetting" />
+
+    </PreferenceScreen>
+
+    <PreferenceCategory
+        android:key="button_voicemail_category_key"
+        android:title="@string/voicemail"
+        android:persistent="false">
+      <ListPreference
+          android:key="button_voicemail_provider_key"
+          android:title="@string/voicemail_provider"
+          android:summary="@string/sum_voicemail_choose_provider"
+          android:defaultValue=""
+          android:persistent="true"
+      />
+      <PreferenceScreen android:key="button_voicemail_setting_key"
+            android:title="@string/voicemail_settings"
+            android:persistent="false">
+
+            <!-- Note for all com.android.phone.EditPhoneNumberPreference objects
+
+           The last several attributes are for use with the EditText field
+           in the dialog.  These attributes are forwarded to that field
+           when the edittext is created.  The attributes include:
+             1. android:singleLine
+             2. android:autoText
+             3. android:background -->
+
+              <com.android.phone.EditPhoneNumberPreference
+                android:key="button_voicemail_key"
+                android:title="@string/voicemail_settings_number_label"
+                android:persistent="false"
+                android:dialogTitle="@string/voicemail"
+                phone:confirmMode="confirm"
+                android:singleLine="true"
+                android:autoText="false" />
+      </PreferenceScreen>
+  </PreferenceCategory>
+
+<!--  Created and modified by cytown@gmail.com for modified Phone app usage -->
+<PreferenceCategory android:key="pref_advanced_settings" android:title="@string/advanced_setting">
+    <CheckBoxPreference
+        android:key="button_vibrate_outgoing"
+        android:title="@string/vibrate_outgoing"
+        android:persistent="false"
+        android:summary="@string/vibrate_outgoing_sum"/>
+    <CheckBoxPreference
+        android:key="button_vibrate_45"
+        android:title="@string/vibrate_45"
+        android:persistent="false"
+        android:summary="@string/vibrate_45_sum"/>
+    <CheckBoxPreference
+        android:key="button_vibrate_hangup"
+        android:title="@string/vibrate_hangup"
+        android:persistent="false"
+        android:summary="@string/vibrate_hangup_sum"/>
+    <CheckBoxPreference
+        android:key="button_vibrate_call_waiting"
+        android:title="@string/vibrate_call_waiting"
+        android:persistent="false"
+        android:summary="@string/vibrate_call_waiting_sum"/>
+    <CheckBoxPreference
+        android:key="button_screen_awake"
+        android:title="@string/screen_awake"
+        android:persistent="false"
+        android:summary="@string/screen_awake_sum"/>
+    <CheckBoxPreference
+        android:key="button_always_proximity"
+        android:title="@string/always_proximity"
+        android:persistent="false"
+        android:summary="@string/always_proximity_sum"/>
+    <CheckBoxPreference
+        android:key="button_return_home"
+        android:title="@string/return_home"
+        android:persistent="false"
+        android:summary="@string/return_home_sum"/>
+    <CheckBoxPreference
+        android:key="button_led_notify"
+        android:title="@string/led_notify_call"
+        android:persistent="false"
+        android:summary="@string/led_notify_call_sum"/>
+    <CheckBoxPreference
+        android:key="button_show_organ"
+        android:title="@string/led_show_organ"
+        android:persistent="false"
+        android:summary="@string/led_show_organ_sum"/>
+    <CheckBoxPreference
+        android:key="button_force_touch"
+        android:title="@string/set_force_touch"
+        android:persistent="false"
+        android:summary="@string/set_force_touch_sum"/>
+   <!-- <CheckBoxPreference
+        android:key="button_turn_silence"
+        android:title="@string/turn_silence"
+        android:persistent="false"
+        android:summary="@string/turn_silence_sum"/> -->
+    <CheckBoxPreference
+        android:key="button_left_hand"
+        android:title="@string/left_hand"
+        android:persistent="false"
+        android:summary="@string/left_hand_sum"/>
+    <CheckBoxPreference
+        android:key="rotate_incall_screen"
+        android:title="@string/rotate_incall"
+        android:persistent="false"
+        android:summary="@string/rotate_incall_sum"/>
+    <CheckBoxPreference
+        android:key="bg_incall_screen"
+        android:title="@string/bg_incall"
+        android:persistent="false"
+        android:summary="@string/bg_incall_sum"/>
+    <!-- Trackball Answer - Added by Nushio -->
+    <ListPreference android:key="button_trackball_answer_timed"
+        android:title="@string/trackball_answer" 
+        android:summary="@string/trackball_answer_sum" 
+        android:entries="@array/trackballLabels" 
+        android:entryValues="@array/trackballValues"
+        android:dialogTitle="@string/trackball_answer" 
+        android:persistent="false" />
+    <ListPreference android:key="button_trackball_hangup_timed"
+        android:title="@string/trackball_hangup" 
+        android:summary="@string/trackball_hangup_sum" 
+        android:entries="@array/trackballHangupLabels" 
+        android:entryValues="@array/trackballValues"
+        android:dialogTitle="@string/trackball_hangup" 
+        android:persistent="false" />
+    <!-- end Trackball Answer -->
+    <!-- Hide Hold button - Added by leinardi -->
+    <CheckBoxPreference
+        android:key="button_hide_hold_button"
+        android:title="@string/hide_hold_button"
+        android:persistent="false"
+        android:summary="@string/hide_hold_button_sum"/>
+    <!-- end Hide Hold button -->
+  <PreferenceScreen
+        android:key="button_black_list"
+        android:title="@string/black_list"
+        android:summary="@string/black_list_sum"
+        android:persistent="false">
+        <com.android.phone.EditPhoneNumberPreference
+            android:key="button_add_black"
+            android:title="@string/add_black"
+            android:persistent="false"
+            android:dialogTitle="@string/add_black"
+            phone:confirmMode="confirm"
+            android:singleLine="true"
+            android:autoText="false"/>
+        <CheckBoxPreference
+            android:key="button_black_regex"
+            android:title="@string/black_regex_title"
+            android:summary="@string/black_regex_summary"
+            android:persistent="false" />
+        <PreferenceCategory android:key="cat_black_list" android:title="@string/black_list"/>
+    </PreferenceScreen>
+</PreferenceCategory>
+
+  <PreferenceCategory android:key="button_misc_category_key"
+        android:title="@string/other_settings"
+        android:persistent="false" />
+
+    <CheckBoxPreference
+        android:key="button_voicemail_notification"
+        android:title="@string/voicemail_notification_title"
+        android:summary="@string/voicemail_notification_summary"
+        android:persistent="false" />
+
+    <CheckBoxPreference
+        android:key="button_auto_retry_key"
+        android:title="@string/auto_retry_mode_title"
+        android:persistent="false"
+        android:summary="@string/auto_retry_mode_summary"/>
+
+    <ListPreference
+        android:key="button_tty_mode_key"
+        android:title="@string/tty_mode_option_title"
+        android:summary="@string/tty_mode_option_summary"
+        android:persistent="false"
+        android:entries="@array/tty_mode_entries"
+        android:entryValues="@array/tty_mode_values"/>
+
+     <CheckBoxPreference
+        android:key="button_hac_key"
+        android:title="@string/hac_mode_title"
+        android:persistent="true"
+        android:summary="@string/hac_mode_summary"/>
+
+    <ListPreference
+        android:key="button_dtmf_settings"
+        android:title="@string/dtmf_tones_title"
+        android:summary="@string/dtmf_tones_summary"
+        android:entries="@array/dtmf_tone_entries"
+        android:entryValues="@array/dtmf_tone_values"/>
+
+    <PreferenceScreen
+        android:key="button_gsm_more_expand_key"
+        android:title="@string/labelGSMMore"
+        android:summary="@string/sum_gsm_call_settings"
+        android:persistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.phone"
+            android:targetClass="com.android.phone.GsmUmtsCallOptions"/>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="button_cdma_more_expand_key"
+        android:title="@string/labelCDMAMore"
+        android:summary="@string/sum_cdma_call_settings"
+        android:persistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.phone"
+            android:targetClass="com.android.phone.CdmaCallOptions"/>
+    </PreferenceScreen>
+
+    <ListPreference
+        android:key="button_voice_quality_key"
+        android:title="@string/voice_quality_preferences_title"
+        android:summary="@string/voice_quality_summary"
+        android:entries="@array/voice_quality_entries"
+        android:entryValues="@array/voice_quality_values"
+        android:dialogTitle="@string/voice_quality_preferences_title"/>
+
+</PreferenceScreen>

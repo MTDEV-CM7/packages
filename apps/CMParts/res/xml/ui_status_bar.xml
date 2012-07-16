@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- Status bar tweaks -->
+	<PreferenceCategory android:title="@string/general_title">
+		<CheckBoxPreference android:key="pref_status_bar_clock"
+			android:title="@string/ui_status_bar_clock_title"
+			android:summary="@string/ui_status_bar_clock_summary"
+			android:defaultValue="true" />
+		<ListPreference android:key="pref_status_bar_am_pm"
+			android:dialogTitle="@string/ui_status_bar_am_pm_title"
+			android:title="@string/ui_status_bar_am_pm_title"
+			android:summary="@string/ui_status_bar_am_pm_summary"
+			android:entries="@array/entries_status_bar_am_pm"
+			android:entryValues="@array/values_status_bar_am_pm" />
+		<ListPreference android:key="pref_status_bar_battery"
+			android:dialogTitle="@string/ui_status_bar_battery_title"
+			android:title="@string/ui_status_bar_battery_title"
+			android:summary="@string/ui_status_bar_battery_summary"
+			android:entries="@array/entries_status_bar_battery"
+			android:entryValues="@array/values_status_bar_battery" />
+		<CheckBoxPreference android:key="pref_status_bar_compact_carrier"
+			android:title="@string/ui_status_bar_compact_carrier_title"
+			android:summary="@string/ui_status_bar_compact_carrier_summary"
+			android:defaultValue="falses" />
+		<ListPreference android:key="pref_status_bar_carrier_label"
+			android:dialogTitle="@string/ui_status_bar_carrier_label_title"
+			android:title="@string/ui_status_bar_carrier_label_title"
+			android:summary="@string/ui_status_bar_carrier_label_summary"
+			android:entries="@array/entries_status_bar_carrier_label"
+			android:entryValues="@array/values_status_bar_carrier_label" />
+		<EditTextPreference android:key="pref_status_bar_carrier_label_custom"
+			android:dialogTitle="@string/ui_status_bar_carrier_label_custom_title"
+			android:title="@string/ui_status_bar_carrier_label_custom_title"
+			android:summary="@string/ui_status_bar_carrier_label_custom_summary"
+			android:defaultValue="CyanogenMod 7" />
+		<ListPreference android:key="pref_status_bar_cm_signal"
+			android:dialogTitle="@string/ui_status_bar_cm_signal_text_title"
+			android:title="@string/ui_status_bar_cm_signal_text_title"
+			android:summary="@string/ui_status_bar_cm_signal_text_summary"
+			android:entries="@array/entries_status_bar_signal"
+			android:entryValues="@array/values_status_bar_signal" />
+		<CheckBoxPreference android:key="pref_status_bar_brightness_control"
+			android:title="@string/ui_status_bar_toggle_brightness"
+			android:summary="@string/ui_status_bar_toggle_brightness_summary"
+			android:defaultValue="falses" />
+		<CheckBoxPreference android:key="pref_status_bar_headset"
+			android:title="@string/ui_status_bar_headset_title"
+			android:summary="@string/ui_status_bar_headset_summary"
+			android:defaultValue="true" />
+	</PreferenceCategory>
+
+</PreferenceScreen>

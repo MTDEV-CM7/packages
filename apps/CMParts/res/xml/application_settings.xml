@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- General settings -->
+    <PreferenceCategory android:key="general_category"
+        android:title="@string/general_title">
+
+        <CheckBoxPreference android:key="pref_move_all_apps"
+            android:title="@string/pref_move_all_apps_title"
+            android:summary="@string/pref_move_all_apps_summary" />
+
+        <ListPreference android:key="pref_install_location"
+            android:dialogTitle="@string/pref_install_location_title"
+            android:title="@string/pref_install_location_title"
+            android:summary="@string/pref_install_location_summary"
+            android:entries="@array/entries_install_location"
+            android:entryValues="@array/values_install_location" />
+
+        <CheckBoxPreference android:key="pref_switch_storage"
+            android:title="@string/pref_switch_storage_title"
+            android:summaryOn="@string/pref_switch_storage_summary_on"
+            android:summaryOff="@string/pref_switch_storage_summary_off" />
+
+        <CheckBoxPreference android:key="enable_permissions_management"
+            android:title="@string/perm_enable_management"
+            android:summary="@string/perm_enable_management_summary" />
+
+        <Preference
+            android:key="phone_goggles_settings"
+            android:title="@string/title_phone_goggles"
+            android:summary="@string/summary_phone_goggles">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.cyanogenmod.cmparts"
+                    android:targetClass="com.cyanogenmod.cmparts.activities.PhoneGogglesActivity" />
+        </Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

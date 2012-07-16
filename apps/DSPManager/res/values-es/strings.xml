@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DSPManager</string>
+    <string name="select_configuration_title">Seleccione configuración a editar</string>
+    <string name="headset_title">Auriculares</string>
+    <string name="speaker_title">Altavoz teléfono</string>
+    <string name="bluetooth_title">Dispositivo Bluetooth</string>
+    <string name="audio_effects">Filtros de audio</string>
+    <string name="dsp_settings_headset">Ajustes DSP - Auriculares</string>
+    <string name="dsp_settings_speaker">Ajustes DSP - Altavoz teléfono</string>
+    <string name="dsp_settings_bluetooth">Ajustes DSP - Dispositivo bluetooth</string>
+    <string name="pref_dsp_title">Rango Dinámico de Compresión (DSP)</string>
+    <string name="pref_dsp_summary_on">Compresión activada</string>
+    <string name="pref_dsp_summary_off">Compresión desactivada</string>
+    <string name="pref_dsp_enable">Habilitar</string>
+    <string name="pref_effect_title">Intensidad del efecto</string>
+    <string name="dialog_effect">Intensidad</string>
+    <string name="pref_equalizer_title">Ecualizador</string>
+    <string name="pref_equalizer_summary_on">Ecualizador activado</string>
+    <string name="pref_equalizer_summary_off">Ecualizador desactivado</string>
+    <string name="pref_equalizer_enable">Habilitar</string>
+    <string name="pref_equalizer_preset_title">Efecto ecualización</string>
+    <string name="pref_equalizer_loudness_title">Modo Loudness</string>
+    <string name="pref_bassboost_title">Bass Boost</string>
+    <string name="pref_bassboost_summary_on">Bass Boost activado</string>
+    <string name="pref_bassboost_summary_off">Bass Boost desactivado</string>
+    <string name="pref_bassboost_enable">Habilitar</string>
+    <string name="pref_headset_virtual_title">Efectos de reberveración</string>
+    <string name="pref_headset_virtual_summary_on">Efectos de reberveración activados</string>
+    <string name="pref_headset_virtual_summary_off">Efectos de reberveración desactivados</string>
+    <string name="pref_headset_virtual_enable">Habilitar</string>
+    <string name="pref_room_title">Tipo de reberveración</string>
+    <string name="dialog_room">Sala de audición</string>
+    <string name="menu_reset">Restablecer</string>
+
+    <string name="eq_preset_acoustic">Acústico</string>
+    <string name="eq_preset_bass_booster">Refuerzo Graves</string>
+    <string name="eq_preset_bass_reducer">Reductor Graves</string>
+    <string name="eq_preset_classical">Clásica</string>
+    <string name="eq_preset_deep">Profundo</string>
+    <string name="eq_preset_flat">Plano</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_small_speakers">Altavoces Pequeños</string>
+    <string name="eq_preset_treble_booster">Refuerzo Agudos</string>
+    <string name="eq_preset_treble_reducer">Reductor Agudos</string>
+    <string name="eq_preset_vocal_booster">Refuerzo Voces</string>
+    <string name="eq_preset_custom">Personalizado</string>
+
+</resources>

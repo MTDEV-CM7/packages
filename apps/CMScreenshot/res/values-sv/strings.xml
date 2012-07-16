@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Skärmdump</string>
+
+    <string name="toast_error">Fel:</string>
+    <string name="toast_save_location">Skärmdump sparades i</string>
+    <string name="share_message">Dela skärmdump</string>
+    <string name="no_way_to_share">Finns inget sätt att dela skärmdump</string>
+    <string name="not_mounted">Media avmonterat</string>
+</resources>

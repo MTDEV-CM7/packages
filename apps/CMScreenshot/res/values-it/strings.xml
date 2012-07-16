@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Screenshot</string>
+
+
+    <string name="toast_error">Errore:</string>
+    <string name="toast_save_location">Schermata salvata in</string>
+    <string name="share_message">Condividi Schermata</string>
+    <string name="no_way_to_share">Non è possibile condividere la schermata</string>
+
+</resources>

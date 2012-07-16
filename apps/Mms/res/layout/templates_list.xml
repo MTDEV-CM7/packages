@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout android:layout_height="wrap_content"
+        style="@android:style/ButtonBar" android:id="@+id/button_bar"
+        android:layout_width="fill_parent" android:layout_alignParentBottom="true">
+
+        <Button android:id="@+id/create_new_message_template"
+            android:text="@string/template_new_title" android:layout_height="wrap_content"
+            android:layout_width="fill_parent"></Button>
+
+    </LinearLayout>
+
+    <ListView android:id="@+id/template_lv" android:layout_above="@+id/button_bar"
+        android:layout_alignParentTop="true" android:layout_height="fill_parent"
+        android:layout_width="fill_parent"></ListView>
+
+</RelativeLayout>

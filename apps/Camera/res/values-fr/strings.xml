@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="camera_error_title" msgid="6484667504938477337">"Erreur de l\'appareil photo."</string>
+    <string name="cannot_connect_camera" msgid="8029009101380114174">"Impossible d\'établir une connexion avec l\'appareil photo."</string>
+    <string name="camera_label" msgid="6346560772074764302">"Appareil photo"</string>
+    <string name="video_camera_label" msgid="2899292505526427293">"Caméra"</string>
+    <string name="gallery_camera_bucket_name" msgid="2924618424339240831">"Photos de l\'appareil"</string>
+    <string name="gallery_camera_videos_bucket_name" msgid="3369151581398551623">"Vidéos de la caméra"</string>
+    <string name="wait" msgid="8600187532323801552">"Veuillez patienter..."</string>
+    <string name="no_storage" product="nosdcard" msgid="5876548364041592119">"Une mémoire de stockage USB doit être installée pour utiliser l\'appareil photo."</string>
+    <string name="no_storage" product="default" msgid="820691042667338625">"Veuillez insérer une carte SD avant d\'utiliser l\'appareil photo."</string>
+    <string name="not_enough_space" product="nosdcard" msgid="6452370395538050134">"La mémoire de stockage USB est pleine."</string>
+    <string name="not_enough_space" product="default" msgid="6655334407957844653">"Votre carte SD est pleine."</string>
+    <string name="preparing_sd" product="nosdcard" msgid="6104019983528341353">"Préparation mémoire de stockage USB..."</string>
+    <string name="preparing_sd" product="default" msgid="2914969119574812666">"Préparation de la carte SD..."</string>
+    <string name="access_sd_fail" product="nosdcard" msgid="7361816489339518850">"Impossible d\'accéder à la mémoire de stockage USB."</string>
+    <string name="access_sd_fail" product="default" msgid="4427585260986849912">"Impossible d\'accéder à la carte SD."</string>
+    <string name="confirm_restore_title" msgid="1229914538263792180">"Rétablir les paramètres par défaut"</string>
+    <string name="confirm_restore_message" msgid="5239464943578877295">"Les paramètres par défaut de l\'appareil photo seront rétablis."</string>
+    <string name="review_play" msgid="6015456244323302817">"LIRE"</string>
+    <string name="review_cancel" msgid="8188009385853399254">"ANNULER"</string>
+    <string name="review_ok" msgid="5305096180300056529">"OK"</string>
+    <string name="review_retake" msgid="7804864054896088338">"AUTRE PHOTO"</string>
+    <string name="camera_gallery_photos_text" msgid="6558048736561932758">"Galerie"</string>
+    <string name="switch_camera_id" msgid="837545176602471325">"Changer d\'appareil photo"</string>
+    <string name="pref_camera_id_title" msgid="6023059405578511534">"Choisir appareil ph."</string>
+    <string name="pref_camera_id_entry_back" msgid="5142699735103692485">"Arrière"</string>
+    <string name="pref_camera_id_entry_front" msgid="5668958706828733669">"Avant"</string>
+    <string name="pref_camera_recordlocation_title" msgid="371208839215448917">"Enregistrer la position"</string>
+    <string name="pref_camera_recordlocation_entry_off" msgid="8888142742988946038">"Désactivé"</string>
+    <string name="pref_camera_recordlocation_entry_on" msgid="7954533529969575594">"Activé"</string>
+
+    <!-- The Video length settings in preference -->
+    <string name="pref_video_quality_title" msgid="8245379279801096922">"Qualité vidéo"</string>
+    <string name="pref_video_quality_entry_hd">HD (30mn)</string>
+    <string name="pref_video_quality_entry_high" msgid="2874184763684055612">"Élevée (30 mn)"</string>
+    <string name="pref_video_quality_entry_low" msgid="5282945640948667598">"Faible (30 mn)"</string>
+    <string name="pref_video_quality_entry_youtubehd">YouTube (HD, 15mn)</string>
+    <string name="pref_video_quality_entry_mms" msgid="2271260293894247704">"MMS (basse, 30 s)"</string>
+    <string name="pref_video_quality_entry_youtube" msgid="3731902408685997150">"YouTube (élevée, 10 mn)"</string>
+    <string name="pref_camera_settings_category" msgid="2576236450859613120">"Paramètres de l\'appareil photo"</string>
+    <string name="pref_camcorder_settings_category" msgid="460313486231965141">"Mode Caméra"</string>
+    <string name="pref_camera_picturesize_title" msgid="4333724936665883006">"Taille d\'image"</string>
+
+    <!-- Settings screen, Picture size dialog radio button choices -->
+    <string name="pref_camera_picturesize_entry_3264x2448">8 M pixels</string>
+    <string name="pref_camera_picturesize_entry_3264x1952">6 M pixels (large)</string>
+    <string name="pref_camera_picturesize_entry_2592x1936">5 M pixels</string>
+    <string name="pref_camera_picturesize_entry_2592x1552">4 M pixels (large)</string>
+    <string name="pref_camera_picturesize_entry_2560x1712">4 M pixels</string>
+    <string name="pref_camera_picturesize_entry_2304x1728">4 M pixels</string>
+    <string name="pref_camera_picturesize_entry_2048x1536">3 M pixels</string>
+    <string name="pref_camera_picturesize_entry_2048x1216">2.5 M pixels (large)</string>
+    <string name="pref_camera_picturesize_entry_1920x1080">HD1080</string>
+    <string name="pref_camera_picturesize_entry_1600x1200">UXGA</string>
+    <string name="pref_camera_picturesize_entry_1280x1024">SXGA</string>
+    <string name="pref_camera_picturesize_entry_1280x960">SXGA (4:3)</string>
+    <string name="pref_camera_picturesize_entry_1280x768">WXGA</string>
+    <string name="pref_camera_picturesize_entry_1280x720">HD720</string>
+    <string name="pref_camera_picturesize_entry_1024x768">XGA</string>
+    <string name="pref_camera_picturesize_entry_800x600">SVGA</string>
+    <string name="pref_camera_picturesize_entry_800x480">WVGA</string>
+    <string name="pref_camera_picturesize_entry_640x480">VGA</string>
+    <string name="pref_camera_picturesize_entry_352x288">CIF</string>
+    <string name="pref_camera_picturesize_entry_320x240">QVGA</string>
+    <string name="pref_camera_picturesize_entry_176x144">QCIF</string>
+
+    <string name="pref_camera_jpegquality_title" msgid="6074540285403193970">"Qualité d\'image"</string>
+    <string name="pref_camera_jpegquality_entry_superfine" msgid="4087830022547613205">"Très haute qualité"</string>
+    <string name="pref_camera_jpegquality_entry_fine" msgid="4474043704802385370">"Haute qualité"</string>
+    <string name="pref_camera_jpegquality_entry_normal" msgid="1274801937207351293">"Normale"</string>
+    <string name="pref_camera_focusmode_title" msgid="2877248921829329127">"Mode de mise au point"</string>
+    <string name="pref_camera_focusmode_entry_auto" msgid="7374820710300362457">"Automatique"</string>
+    <string name="pref_camera_focusmode_entry_normal">Normal</string>
+    <string name="pref_camera_focusmode_entry_infinity" msgid="3413922419264967552">"Infini"</string>
+    <string name="pref_camera_focusmode_entry_macro" msgid="4424489110551866161">"Macro"</string>
+    <string name="pref_camera_flashmode_title" msgid="2287362477238791017">"Mode Flash"</string>
+    <string name="pref_camera_flashmode_entry_auto" msgid="7288383434237457709">"Automatique"</string>
+    <string name="pref_camera_flashmode_entry_on" msgid="5330043918845197616">"Activé"</string>
+    <string name="pref_camera_flashmode_entry_off" msgid="867242186958805761">"Désactivé"</string>
+    <string name="pref_camera_whitebalance_title" msgid="677420930596673340">"Balance des blancs"</string>
+    <string name="pref_camera_whitebalance_entry_auto" msgid="6580665476983469293">"Automatique"</string>
+    <string name="pref_camera_whitebalance_entry_incandescent" msgid="8856667786449549938">"Incandescent"</string>
+    <string name="pref_camera_whitebalance_entry_daylight" msgid="2534757270149561027">"Lumière du jour"</string>
+    <string name="pref_camera_whitebalance_entry_fluorescent" msgid="2435332872847454032">"Fluorescent"</string>
+    <string name="pref_camera_whitebalance_entry_cloudy" msgid="3531996716997959326">"Nuageux"</string>
+    <string name="pref_camera_coloreffect_title" msgid="4152827686267109207">"Effet couleur"</string>
+    <string name="pref_camera_coloreffect_entry_none" msgid="4759462740660236565">"Aucun"</string>
+    <string name="pref_camera_coloreffect_entry_mono" msgid="9068472385922288418">"Mono"</string>
+    <string name="pref_camera_coloreffect_entry_sepia" msgid="7558624061140022613">"Sépia"</string>
+    <string name="pref_camera_coloreffect_entry_negative" msgid="1635477825533469324">"Négatif"</string>
+    <string name="pref_camera_coloreffect_entry_solarize" msgid="7399297076108412329">"Soleil direct"</string>
+    <string name="pref_camera_coloreffect_entry_posterize" msgid="8596847197608350695">"Postérisation"</string>
+    <string name="pref_camera_coloreffect_entry_aqua" msgid="224075791902166343">"Aquatique"</string>
+    <string name="pref_camera_coloreffect_entry_pastel" msgid="1263931790863509482">"Pastel"</string>
+    <string name="pref_camera_coloreffect_entry_mosaic" msgid="1756287704236443515">"Mosaïque"</string>
+    <string name="pref_camera_coloreffect_entry_redtint" msgid="7135044258970245718">"Teinte rouge"</string>
+    <string name="pref_camera_coloreffect_entry_bluetint" msgid="987468567611774716">"Teinte bleue"</string>
+    <string name="pref_camera_coloreffect_entry_greentint" msgid="4205380735971677893">"Teinte verte"</string>
+
+    <!-- Settings screen, Multiple levels entries -->
+    <string name="pref_camera_sharpness_entry_level0">Niveau 0</string>
+    <string name="pref_camera_sharpness_entry_level1">Niveau 1</string>
+    <string name="pref_camera_sharpness_entry_level2">Niveau 2 (Par défaut)</string>
+    <string name="pref_camera_sharpness_entry_level3">Niveau 3</string>
+    <string name="pref_camera_sharpness_entry_level4">Niveau 4</string>
+    <string name="pref_camera_sharpness_entry_level5">Niveau 5</string>
+
+    <!-- Settings screen, Multiple levels entries -->
+    <string name="pref_camera_contrast_entry_level0">Niveau 0</string>
+    <string name="pref_camera_contrast_entry_level1">Niveau 1</string>
+    <string name="pref_camera_contrast_entry_level2">Niveau 2</string>
+    <string name="pref_camera_contrast_entry_level3">Niveau 3 (Par défaut)</string>
+    <string name="pref_camera_contrast_entry_level4">Niveau 4</string>
+    <string name="pref_camera_contrast_entry_level5">Niveau 5</string>
+
+    <!-- Settings screen, Multiple levels entries -->
+    <string name="pref_camera_saturation_entry_level0">Niveau 0</string>
+    <string name="pref_camera_saturation_entry_level1">Niveau 1</string>
+    <string name="pref_camera_saturation_entry_level2">Niveau 2</string>
+    <string name="pref_camera_saturation_entry_level3">Niveau 3 (Par défaut)</string>
+    <string name="pref_camera_saturation_entry_level4">Niveau 4</string>
+    <string name="pref_camera_saturation_entry_level5">Niveau 5</string>
+
+    <!-- Settings screen, Select sharpness title -->
+    <string name="pref_camera_sharpness_title">Finesse</string>
+    <!-- Settings screen, Select contrast title -->
+    <string name="pref_camera_contrast_title">Contraste</string>
+    <!-- Settings screen, Select saturation title -->
+    <string name="pref_camera_saturation_title">Saturation</string>
+
+    <string name="pref_camera_scenemode_title" msgid="1420535844292504016">"Mode Scène"</string>
+    <string name="pref_camera_scenemode_entry_auto" msgid="7113995286836658648">"Automatique"</string>
+    <string name="pref_camera_scenemode_entry_action" msgid="616748587566110484">"Action"</string>
+    <string name="pref_camera_scenemode_entry_portrait" msgid="9140929538393384095">"Portrait"</string>
+    <string name="pref_camera_scenemode_entry_landscape" msgid="405417518823973264">"Paysage"</string>
+    <string name="pref_camera_scenemode_entry_night" msgid="7606898503102476329">"Nuit"</string>
+    <string name="pref_camera_scenemode_entry_night_portrait" msgid="2643519475791545277">"Portrait de nuit"</string>
+    <string name="pref_camera_scenemode_entry_theatre" msgid="3123861130799840901">"Théâtre"</string>
+    <string name="pref_camera_scenemode_entry_beach" msgid="5163939340224174481">"Plage"</string>
+    <string name="pref_camera_scenemode_entry_snow" msgid="2110494623725511788">"Neige"</string>
+    <string name="pref_camera_scenemode_entry_sunset" msgid="181661154611507212">"Coucher de soleil"</string>
+    <string name="pref_camera_scenemode_entry_steadyphoto" msgid="5751266665823209065">"Anti-flou"</string>
+    <string name="pref_camera_scenemode_entry_fireworks" msgid="3530608172188797432">"Feux d\'artifice"</string>
+    <string name="pref_camera_scenemode_entry_sports">Sport</string>
+    <string name="pref_camera_scenemode_entry_party" msgid="907053529286788253">"Fête"</string>
+    <string name="pref_camera_scenemode_entry_candlelight" msgid="2066183182126946813">"Bougies"</string>
+    <string name="pref_camera_scenemode_entry_backlight">Contre-jour</string>
+    <string name="pref_camera_scenemode_entry_flowers">Fleurs</string>
+    <string name="pref_restore_title" msgid="6479274979730178961">"Paramètres de l\'appareil photo"</string>
+    <string name="pref_restore_detail">Paramètres d\'origine</string>
+    <string name="pref_exposure_title" msgid="1229093066434614811">"Exposition"</string>
+    <string name="details_ok" msgid="6848594369924424312">"OK"</string>
+    <string name="spaceIsLow_content" product="nosdcard" msgid="4401325203349203177">"La mémoire de stockage USB est pleine. Définissez la qualité sur une valeur plus basse ou supprimez des images ou d\'autres types de fichiers."</string>
+    <string name="spaceIsLow_content" product="default" msgid="1732882643101247179">"Votre carte SD est pleine. Modifiez le paramètre de qualité ou supprimez des images ou des fichiers."</string>
+    <string name="video_reach_size_limit" msgid="6179877322015552390">"Taille maximale atteinte."</string>
+    <string name="zoom_control_title" msgid="6532562653386981815">"Zoom"</string>
+    <string name="switch_to_camera_lable" msgid="8248495141797448471">"Passer en mode photo"</string>
+    <string name="switch_to_video_lable" msgid="4525451949497982385">"Passer en mode vidéo"</string>
+
+    <!-- Settings screen, Select Iso title -->
+    <string name="pref_camera_iso_title">Choisir niveau ISO</string>
+
+    <!-- Settings screen, ISO dialog radio button choices -->
+    <string name="pref_camera_iso_entry_auto">Automatique</string>
+    <string name="pref_camera_iso_entry_isodeblur">ISO Auto (HJR)</string>
+
+    <!-- Settings screen, Select lens shading title -->
+    <string name="pref_camera_lensshading_title">Foncer l\'image</string>
+
+    <!-- Settings screen, lens shading radio button choices -->
+    <string name="pref_camera_lensshading_entry_enable">Activer</string>
+    <string name="pref_camera_lensshading_entry_disable">Désactiver</string>
+
+    <!-- Settings screen, Anti Banding title -->
+    <string name="pref_camera_antibanding_title">Antiscintillement</string>
+
+    <!-- Settings screen, Anti Banding entries -->
+    <string name="pref_camera_antibanding_entry_0">Désactivé</string>
+    <string name="pref_camera_antibanding_entry_3">Automatique</string>
+
+    <!-- Settings screen, Select auto exposure title -->
+    <string name="pref_camera_autoexposure_title">Mode de mesure</string>
+
+    <!-- Settings screen, auto exposure dialog radio button choices -->
+    <string name="pref_camera_autoexposure_entry_frameaverage">Multizone</string>
+    <string name="pref_camera_autoexposure_entry_centerweighted">Pondéré</string>
+    <string name="pref_camera_autoexposure_entry_spotmetering">Spot</string>
+
+    <!-- Settings screen, Capture mode title -->
+    <string name="pref_camera_capturemode_title">Prise de vue</string>
+
+    <!-- Settings screen, Capture mode dialog radio button choices -->
+    <string name="pref_camera_capturemode_entry_default">Immédiate</string>
+    <string name="pref_camera_capturemode_entry_timer">Retardateur</string>
+
+    <!-- Settings screen, Capture mode dialog entries -->
+    <string name="pref_camera_capturemode_entry_10">10 secondes</string>
+    <string name="pref_camera_capturemode_entry_20">20 secondes</string>
+    <string name="pref_camera_capturemode_entry_30">30 secondes</string>
+    <string name="pref_camera_capturemode_entry_40">40 secondes</string>
+    <string name="pref_camera_capturemode_entry_50">50 secondes</string>
+    <string name="pref_camera_capturemode_entry_60">60 secondes</string>
+
+<!-- ********************** -->
+
+    <!-- More Settings screen, volume buttons title -->
+    <string name="pref_camera_vol_shutter_title">Déclencheur sur Volume</string>
+    <string name="pref_camera_vol_up_shutter">Volume Haut</string>
+    <string name="pref_camera_vol_up_shutter_summary">Le bouton Volume Haut prend une photo</string>
+    <string name="pref_camera_vol_down_shutter">Volume Bas</string>
+    <string name="pref_camera_vol_down_shutter_summary">Le bouton Volume Bas prend une photo</string>
+
+    <!-- More Settings screen, search button title -->
+    <string name="pref_camera_search_shutter_title">Déclencheur sur Recherche</string>
+
+    <!-- More Settings screen, search button -->
+    <string name="pref_camera_search_shutter">Bouton Recherche</string>
+    <string name="pref_camera_search_shutter_summary">Le bouton Recherche prend une photo</string>
+
+    <!-- More Settings screen, power button title -->
+    <string name="pref_camera_power_shutter_title">Déclencheur sur Power</string>
+
+    <!-- More Settings screen, power button -->
+    <string name="pref_camera_power_shutter">Bouton Power</string>
+    <string name="pref_camera_power_shutter_summary">Le bouton Power prend une photo</string>
+
+    <!-- More Settings screen, zoom button title -->
+    <string name="pref_camera_vol_zoom_title">Zoom avec boutons volume</string>
+    <string name="pref_camera_vol_zoom">Zoomer avec Volume</string>
+    <string name="pref_camera_vol_zoom_summary">Les boutons volume paramètrent le zoom</string>
+
+    <!-- Settings screen, custom focus title -->
+    <string name="pref_camera_settings_focus_title">Focus</string>
+
+    <!-- Settings screen, focus settings -->
+    <string name="pref_camera_settings_focus">Préfocus</string>
+    <string name="pref_camera_settings_focus_summary">Adapter le focus avant de prendre la photo</string>
+    <string name="pref_camera_settings_long_focus">Focus Long</string>
+    <string name="pref_camera_settings_long_focus_summary">Laisser le bouton enfoncé pour adapter le focus, relâcher pour prendre la photo</string>
+
+    <!-- Advanced options label -->
+    <string name="advanced_options_label">Options avancées</string>
+
+    <!-- Other settings -->
+    <string name="pref_camera_other_settings_title">Autres paramètres</string>
+    <string name="pref_camera_timer_duration">Durée retardateur</string>
+    <string name="pref_camera_timer_duration_summary">Durée utilisée pour retarder la prise de vue des photos</string>
+    <string name="pref_camera_storage_external">Utiliser la carte SD amovible</string>
+    <string name="pref_camera_storage_external_summary_off">Stocke les photos et vidéos sur la mémoire interne du téléphone (espace disponible: %s)</string>
+    <string name="pref_camera_storage_external_summary_on">Stocke les photos et vidéos sur la carte SD amovible (espace disponible: %s)</string>
+    <string name="pref_camera_mega_bytes">Mo</string>
+    <string name="pref_camera_giga_bytes">Go</string>
+
+</resources>

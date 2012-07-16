@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Optimizador Gan</string>
+    <string name="notificationTitle">Ligação via Wifi em andamento</string>
+    <string name="notificationText">Wifi está em modo alta performance</string>
+</resources>

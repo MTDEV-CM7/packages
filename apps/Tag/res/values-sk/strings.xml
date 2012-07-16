@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Značky"</string>
+    <string name="title_scanned_tag">"Bola pridaná nová značka"</string>
+    <string name="title_existing_tag">"Značka"</string>
+    <string name="tab_tags">"Značky"</string>
+    <string name="tab_starred">"Označené hviezdičkou"</string>
+    <string name="tab_my_tag">"Moja značka"</string>
+    <string name="tag_unknown">"Neznámy typ značky"</string>
+    <string name="tag_empty">"Prázdna značka"</string>
+    <string name="button_delete">"Odstrániť"</string>
+    <string name="button_done">"Hotovo"</string>
+    <string name="button_save">"Uložiť"</string>
+    <string name="button_cancel">"Zrušiť"</string>
+    <string name="cancel_help_text">"Ak chcete preskočiť pridanie tejto značky do svojej zbierky, dotknite sa tlačidla Hotovo"</string>
+    <string name="action_text">"Poslať správu kontaktu <xliff:g id="PHONE_NUMBER">%s</xliff:g>"</string>
+    <string name="action_call">"Volať kontakt <xliff:g id="PHONE_NUMBER">%s</xliff:g>"</string>
+    <string name="turn_on_my_tag">"Zdieľať značku"</string>
+    <string name="edit_tag">"Upraviť značku"</string>
+    <string name="turn_on_my_tag_subtitle">"Povoliť ostatným používateľom čítať moju značku"</string>
+    <string name="add_content">"Viac…"</string>
+    <string name="tag_title">"Názov"</string>
+    <string name="tag_text">"Text"</string>
+    <string name="select_type">"Vyberte typ, ktorý chcete pridať"</string>
+    <string name="photo">"Fotografia"</string>
+    <string name="bad_photo">"Súbor nie je možné otvoriť."</string>
+    <string name="url">"Adresa URL"</string>
+    <string name="contact">"Kontakt"</string>
+    <string name="location">"Poloha"</string>
+    <string name="empty_tag_prompt">"Táto značka je prázdna."</string>
+    <string name="empty_tag_instructions">"Ak chcete pridať obsah, dotknite sa možnosti "<b>"Zapísať značku"</b>"."</string>
+    <string name="write">"Zapísať značku"</string>
+    <string name="cancel">"Zrušiť"</string>
+    <string name="menu_help">"Pomocník"</string>
+    <string name="import_vcard">"Importovať kontakt ^1"</string>
+    <string name="mime_display_name">"Údaje zo značky NFC"</string>
+    <string name="dialog_title_nfc_off">"Funkcia NFC je vypnutá"</string>
+    <string name="dialog_text_nfc_off">"Ak chcete skenovať značky, musíte zapnúť funkciu NFC."</string>
+    <string name="button_settings">"Nastavenia"</string>
+    <string name="empty_list">"Nenaskenovali ste žiadne značky."</string>
+    <string name="empty_list_starred">"Nemáte žiadne značky označené hviezdičkou."</string>
+    <string name="button_more_info">"Ďalšie informácie"</string>
+    <string name="vcard_title">"Kontaktné informácie pre ^1"</string>
+    <string name="next">"Ďalej"</string>
+    <string name="back">"Späť"</string>
+    <string name="close">"Zavrieť"</string>
+    <string name="intro_title">"Informácie o Značkách"</string>
+    <string name="intro_text_about">"Značky slúžia na usporiadanie a zdieľanie značiek NFC (komunikácia na veľmi krátku vzdialenosť)."</string>
+    <string name="intro_text_usage">"Ak chcete načítať značku, zapnite telefón a položte ho vedľa značky."</string>
+    <string name="intro_text_contents">"Značky NFC môžu obsahovať text, adresy URL, obrázky a ďalšie druhy informácií."</string>
+    <string name="intro_text_more">"Pri skenovaní či zdieľaní značiek musíte mať zapnutú funkciu NFC (Nastavenia &gt; Bezdrôtové pripojenie a siete)."</string>
+    <string name="intro_text_more2">"Viac informácií získate stlačením tlačidla Menu a dotykom na možnosť Pomocník na ktorejkoľvek obrazovke Značiek."</string>
+    <string name="tag_deleted">"Značka bola odstránená"</string>
+    <string name="add_tag">"Pridať novú značku"</string>
+    <string name="choose_my_tag">"Vyberte značku na zdieľanie"</string>
+    <string name="active_tag">"Aktívna značka"</string>
+    <string name="manage_my_tags">"Správa značiek"</string>
+    <string name="menu_delete">"Odstrániť značku"</string>
+    <string name="menu_edit">"Upraviť značku"</string>
+    <string name="menu_set_as_active">"Nastaviť ako aktívnu značku"</string>
+    <string name="no_tag_selected">"Nevybrali ste žiadny štítok na zdieľanie."</string>
+    <string name="no_tags_created">"Nevytvorili ste žiadne štítky."</string>
+</resources>

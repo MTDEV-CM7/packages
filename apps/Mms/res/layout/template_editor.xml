@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_alignParentTop="true"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:text="@string/template_explanation"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_above="@+id/template_text" android:paddingBottom="5dip" />
+
+        <EditText android:id="@+id/template_text" android:hint="@string/template_insert_hint"
+            android:gravity="top" android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:minLines="3">
+        </EditText>
+
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:text="@string/template_gesture_draw"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:paddingBottom="5dip" />
+
+        <android.gesture.GestureOverlayView
+            android:id="@+id/gestures_overlay" android:layout_width="match_parent"
+            android:layout_height="0dip" android:layout_weight="1.0"
+            android:gestureStrokeType="multiple" />
+    </LinearLayout>
+
+    <LinearLayout style="@android:style/ButtonBar"
+        android:layout_below="@+id/gestures_overlay"
+        android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/done" android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:text="@string/template_save" />
+
+    </LinearLayout>
+
+</RelativeLayout>

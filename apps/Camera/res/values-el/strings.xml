@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="camera_error_title">"Σφάλμα φωτογραφικής μηχανής"</string>
+    <string name="cannot_connect_camera">"Δεν είναι δυνατή η σύνδεση με τη φωτογραφική μηχανή."</string>
+    <string name="camera_label">"Φωτογ. μηχανή"</string>
+    <string name="video_camera_label">"Βιντεοκάμ."</string>
+    <string name="gallery_camera_bucket_name">"Εικόνες φωτογραφικής μηχανής"</string>
+    <string name="gallery_camera_videos_bucket_name">"Βίντεο φωτογραφικής μηχανής"</string>
+    <string name="wait">"Περιμένετε..."</string>
+    <string name="no_storage" product="nosdcard">"Προσαρτήστε τον χώρο αποθήκευσης USB προτού κάνετε χρήση της φωτογραφικής μηχανής."</string>
+    <string name="no_storage" product="default">"Πριν χρησιμοποιήσετε τη φωτογραφική μηχανή, εισάγετε μία κάρτα SD."</string>
+    <string name="not_enough_space" product="nosdcard">"Ο χώρος αποθήκευσης USB είναι πλήρης."</string>
+    <string name="not_enough_space" product="default">"Η κάρτα SD είναι πλήρης."</string>
+    <string name="preparing_sd" product="nosdcard">"Προετοιμασία χώρου αποθ. USB…"</string>
+    <string name="preparing_sd" product="default">"Προετοιμασία κάρτας SD…"</string>
+    <string name="access_sd_fail" product="nosdcard">"Αποτυχία πρόσβασης στον χώρο αποθήκευσης USB."</string>
+    <string name="access_sd_fail" product="default">"Δεν είναι δυνατή η πρόσβαση στην κάρτα SD."</string>
+    <string name="confirm_restore_title">"Επαναφορά προεπιλογών"</string>
+    <string name="confirm_restore_message">"Οι ρυθμίσεις της φωτογραφικής μηχανής θα επανέλθουν στις προεπιλογές."</string>
+    <string name="review_play">"ΑΝΑΠΑΡΑΓΩΓΗ"</string>
+    <string name="review_cancel">"ΑΚΥΡΩΣΗ"</string>
+    <string name="review_ok">"ΟΚ"</string>
+    <string name="review_retake">"ΝΕΑ ΛΗΨΗ"</string>
+    <string name="camera_gallery_photos_text">"Συλλογή"</string>
+    <string name="switch_camera_id">"Εναλλαγή κάμερας"</string>
+    <string name="pref_camera_id_title">"Επιλογή κάμερας"</string>
+    <string name="pref_camera_id_entry_back">"Οπίσθια"</string>
+    <string name="pref_camera_id_entry_front">"Εμπρόσθια"</string>
+    <string name="pref_camera_recordlocation_title">"Αποθήκευση τοποθεσίας"</string>
+    <string name="pref_camera_recordlocation_entry_off">"Απενεργοποιημένο"</string>
+    <string name="pref_camera_recordlocation_entry_on">"Ενεργοποιημένο"</string>
+    <string name="pref_video_quality_title">"Ποιότητα βίντεο"</string>
+    <string name="pref_video_quality_entry_hd">HD (30m)</string>
+    <string name="pref_video_quality_entry_wide">Wide (30m)</string>
+    <string name="pref_video_quality_entry_high">High (30m)</string>
+    <string name="pref_video_quality_entry_low">Low (30m)</string>
+    <string name="pref_video_quality_entry_mms">MMS (Χαμηλή, 30s)</string>
+    <string name="pref_video_quality_entry_youtubehd">YouTube (HD, 15m)</string>
+    <string name="pref_video_quality_entry_youtube">YouTube (Υψηλή, 15m)</string>
+    <string name="pref_camera_settings_category">"Ρυθμίσεις φωτογραφικής μηχανής"</string>
+    <string name="pref_camcorder_settings_category">"Ρυθμίσεις βιντεοκάμερας"</string>
+    <string name="pref_camera_picturesize_title">"Ανάλυση εικόνας"</string>
+    <string name="pref_camera_picturesize_entry_3264x2448">8M Pixels</string>
+    <string name="pref_camera_picturesize_entry_3264x1952">6M Pixels (ευρεία)</string>
+    <string name="pref_camera_picturesize_entry_2592x1936">5M Pixels</string>
+    <string name="pref_camera_picturesize_entry_2592x1552">4M Pixels (ευρεία)</string>
+    <string name="pref_camera_picturesize_entry_2560x1712">4M Pixels</string>
+    <string name="pref_camera_picturesize_entry_2304x1728">4M Pixels</string>
+    <string name="pref_camera_picturesize_entry_2048x1536">3M Pixels</string>
+    <string name="pref_camera_picturesize_entry_2048x1216">2.5M Pixels (ευρεία)</string>
+    <string name="pref_camera_picturesize_entry_1920x1080">HD1080</string>
+    <string name="pref_camera_picturesize_entry_1600x1200">UXGA</string>
+    <string name="pref_camera_picturesize_entry_1600x960">1.5M Pixels (ευρεία)</string>
+    <string name="pref_camera_picturesize_entry_1280x1024">SXGA</string>
+    <string name="pref_camera_picturesize_entry_1280x960">SXGA (4:3)</string>
+    <string name="pref_camera_picturesize_entry_1280x768">WXGA</string>
+    <string name="pref_camera_picturesize_entry_1280x720">HD720</string>
+    <string name="pref_camera_picturesize_entry_1024x768">XGA</string>
+    <string name="pref_camera_picturesize_entry_800x600">SVGA</string>
+    <string name="pref_camera_picturesize_entry_800x480">WVGA</string>
+    <string name="pref_camera_picturesize_entry_640x480">VGA</string>
+    <string name="pref_camera_picturesize_entry_352x288">CIF</string>
+    <string name="pref_camera_picturesize_entry_320x240">QVGA</string>
+    <string name="pref_camera_picturesize_entry_176x144">QCIF</string>
+    <string name="pref_camera_jpegquality_title">"Ποιότητα εικόνας"</string>
+    <string name="pref_camera_jpegquality_entry_superfine">"Πολύ υψηλή"</string>
+    <string name="pref_camera_jpegquality_entry_fine">"Υψηλή"</string>
+    <string name="pref_camera_jpegquality_entry_normal">"Κανονική"</string>
+    <string name="advanced_options_label">"Προχωρημένες Ρυθμίσεις"</string>
+    <string name="pref_camera_vol_shutter_title">"Λήψη με Volume"</string>
+    <string name="pref_camera_vol_up_shutter">"Volume Up"</string>
+    <string name="pref_camera_vol_up_shutter_summary">"Λήψη με το πλήκτρο Volume up"</string>
+    <string name="pref_camera_vol_down_shutter">"Volume Down"</string>
+    <string name="pref_camera_vol_down_shutter_summary">"Λήψη με το πλήκτρο Volume down"</string>
+    <string name="pref_camera_vol_zoom_title">"Ζουμ με Volume"</string>
+    <string name="pref_camera_vol_zoom">"Τα πλήκτρα Volume κάνουν Ζουμ"</string>
+    <string name="pref_camera_vol_zoom_summary">"Τα πλήκτρα Volume up/down κάνουν ζουμ in/out αντίστοιχα"</string>
+    <string name="pref_camera_other_settings_title">"Άλλες ρυθμίσεις"</string>
+    <string name="pref_camera_timer_duration">"Διάρκεια Χρονοδιακόπτη"</string>
+    <string name="pref_camera_timer_duration_summary">"Επιλέξτε διάρκεια για το χρονοδιακόπτη της κάμερας"</string>
+    <string name="pref_camera_search_shutter_title">"Λήψη με Αναζήτηση"</string>
+    <string name="pref_camera_search_shutter">"Πλήκτρο Αναζήτησης"</string>
+    <string name="pref_camera_search_shutter_summary">"Λήψη με το πλήκτρο Αναζήτησης"</string>
+    <string name="pref_camera_power_shutter_title">Λήψη με Power</string>
+    <string name="pref_camera_power_shutter">"Πλήκτρο Power"</string>
+    <string name="pref_camera_power_shutter_summary">"Λήψη με πλήκτρο Power"</string>
+    <string name="pref_camera_settings_focus_title">Εστίαση</string>
+    <string name="pref_camera_settings_focus">Προ-εστίαση</string>
+    <string name="pref_camera_settings_focus_summary">Εστιάζει πριν τη λήψη της φωτογραφίας</string>
+    <string name="pref_camera_settings_long_focus">Εστίαση με πλήκτρο</string>
+    <string name="pref_camera_settings_long_focus_summary">Κρατήστε πατημένο το πλήκτρο για εστίαση, ελευθερώστε για λήψη της φωτογραφίας</string>
+    <string name="pref_camera_focusmode_title">"Εστίαση"</string>
+    <string name="pref_camera_focusmode_entry_auto">"Αυτόματη"</string>
+    <string name="pref_camera_focusmode_entry_normal">"Κανονική"</string>
+    <string name="pref_camera_focusmode_entry_macro">"Macro"</string>
+    <string name="pref_camera_focusmode_entry_infinity">"Άπειρο"</string>
+    <string name="pref_camera_focusmode_entry_touch">"Αφή"</string>
+    <string name="pref_camera_focusmode_entry_fixed">"Σταθερή"</string>
+    <string name="pref_camera_focusmode_entry_facedetect">"Ανίχν. προσώπου"</string>
+    <string name="pref_camera_capturemode_title">Λήψη</string>
+    <string name="pref_camera_capturemode_entry_default">Άμεσα</string>
+    <string name="pref_camera_capturemode_entry_timer">Με χρονοδιακόπτη</string>
+    <string name="pref_camera_capturemode_entry_10">10 δευτερόλεπτα</string>
+    <string name="pref_camera_capturemode_entry_20">20 δευτερόλεπτα</string>
+    <string name="pref_camera_capturemode_entry_30">30 δευτερόλεπτα</string>
+    <string name="pref_camera_capturemode_entry_40">40 δευτερόλεπτα</string>
+    <string name="pref_camera_capturemode_entry_50">50 δευτερόλεπτα</string>
+    <string name="pref_camera_capturemode_entry_60">60 δευτερόλεπτα</string>
+    <string name="pref_camera_flashmode_title">"Φλας"</string>
+    <string name="pref_camera_flashmode_entry_auto">"Αυτόματο"</string>
+    <string name="pref_camera_flashmode_entry_on">"Ενεργοποιημένο"</string>
+    <string name="pref_camera_flashmode_entry_off">"Απενεργοποιημένο"</string>
+    <string name="pref_camera_whitebalance_title">"Ισορροπία λευκού"</string>
+    <string name="pref_camera_whitebalance_entry_auto">"Αυτόματο"</string>
+    <string name="pref_camera_whitebalance_entry_incandescent">"Λαμπτήρας πυρακτώσεως"</string>
+    <string name="pref_camera_whitebalance_entry_daylight">"Φως ημέρας"</string>
+    <string name="pref_camera_whitebalance_entry_fluorescent">"Λαμπτήρας φθορισμού"</string>
+    <string name="pref_camera_whitebalance_entry_cloudy">"Συννεφιά"</string>
+    <string name="pref_camera_whitebalance_entry_cloudydaylight">"Συννεφιά-Φως ημέρας"</string>
+    <string name="pref_camera_coloreffect_title">"Εφέ χρώματος"</string>
+    <string name="pref_camera_coloreffect_entry_none">"Κανένα"</string>
+    <string name="pref_camera_coloreffect_entry_mono">"Μονοφωνικό"</string>
+    <string name="pref_camera_coloreffect_entry_sepia">"Σέπια"</string>
+    <string name="pref_camera_coloreffect_entry_negative">"Αρνητικό"</string>
+    <string name="pref_camera_coloreffect_entry_solarize">"Υπερφώτιση"</string>
+    <string name="pref_camera_coloreffect_entry_posterize">"Ποστεροποίηση"</string>
+    <string name="pref_camera_coloreffect_entry_aqua">"Γαλάζιο"</string>
+    <string name="pref_camera_coloreffect_entry_pastel">"Παστέλ"</string>
+    <string name="pref_camera_coloreffect_entry_mosaic">"Μωσαϊκό"</string>
+    <string name="pref_camera_coloreffect_entry_redtint">"Κόκκινη απόχρωση"</string>
+    <string name="pref_camera_coloreffect_entry_bluetint">"Μπλε απόχρωση"</string>
+    <string name="pref_camera_coloreffect_entry_greentint">"Πράσινη απόχρωση"</string>
+    <string name="pref_camera_coloreffect_entry_emboss">"Ανάγλυφο"</string>
+    <string name="pref_camera_coloreffect_entry_vivid">"Ζωντανό"</string>
+    <string name="pref_camera_coloreffect_entry_blue">"Μπλε απόχρωση"</string>
+    <string name="pref_camera_coloreffect_entry_negative_sepia">"Αρνητικό σέπια"</string>
+    <string name="pref_camera_scenemode_title">"Τύπος λήψης"</string>
+    <string name="pref_camera_scenemode_entry_auto">"Αυτόματο"</string>
+    <string name="pref_camera_scenemode_entry_action">"Κίνηση"</string>
+    <string name="pref_camera_scenemode_entry_portrait">"Πορτραίτο"</string>
+    <string name="pref_camera_scenemode_entry_landscape">"Τοπίο"</string>
+    <string name="pref_camera_scenemode_entry_night">"Νύχτα"</string>
+    <string name="pref_camera_scenemode_entry_night_portrait">"Νυχτερινό πορτραίτο"</string>
+    <string name="pref_camera_scenemode_entry_theatre">"Θέατρο"</string>
+    <string name="pref_camera_scenemode_entry_beach">"Παραλία"</string>
+    <string name="pref_camera_scenemode_entry_snow">"Χιόνι"</string>
+    <string name="pref_camera_scenemode_entry_sunset">"Ηλιοβασίλεμα"</string>
+    <string name="pref_camera_scenemode_entry_steadyphoto">"Σταθερή φωτογραφία"</string>
+    <string name="pref_camera_scenemode_entry_fireworks">"Πυροτεχνήματα"</string>
+    <string name="pref_camera_scenemode_entry_party">"Πάρτυ"</string>
+    <string name="pref_camera_scenemode_entry_candlelight">"Φως κεριών"</string>
+    <string name="pref_camera_scenemode_entry_backlight">"Οπίσθιος φωτισμός"</string>
+    <string name="pref_camera_scenemode_entry_flowers">"Λουλούδια"</string>
+    <string name="pref_camera_scenemode_entry_duskdawn">"Σούρουπο"</string>
+    <string name="pref_camera_scenemode_entry_fallcolor">"Φθινόπωρο"</string>
+    <string name="pref_camera_scenemode_entry_text">"Κείμενο"</string>
+    <string name="pref_restore_title">"Ρυθμίσεις φωτογραφικής μηχανής"</string>
+    <string name="pref_restore_detail">"Επαναφορά προεπιλογών"</string>
+    <string name="pref_exposure_title">"Έκθεση"</string>
+    <string name="details_ok">"OK"</string>
+    <string name="spaceIsLow_content" product="nosdcard">"Ο διαθέσιμος χώρος USB δεν επαρκεί. Αλλάξτε τη ρύθμιση της ποιότητας ή διαγράψτε κάποιες εικόνες και άλλα αρχεία."</string>
+    <string name="spaceIsLow_content" product="default">"Ο διαθέσιμος χώρος στην κάρτα SD δεν επαρκεί. Αλλάξτε τη ρύθμιση ποιότητας ή διαγράψτε κάποιες εικόνες και άλλα αρχεία."</string>
+    <string name="video_reach_size_limit">"Συμπληρώθηκε το όριο μεγέθους."</string>
+    <string name="zoom_control_title">"Ζουμ"</string>
+    <string name="switch_to_camera_lable">"Αλλαγή σε λειτουργία φωτογραφικής μηχανής"</string>
+    <string name="switch_to_video_lable">"Αλλαγή σε λειτουργία βίντεο"</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- General settings -->
+	<PreferenceCategory android:key="general_category"
+		android:title="@string/general_title">
+
+		<!-- Power prompt -->
+		<CheckBoxPreference android:key="power_dialog_prompt"
+			android:title="@string/pref_power_prompt_title" android:summary="@string/pref_power_prompt_summary"
+			android:defaultValue="true" />
+
+		<PreferenceScreen android:key="ui_power_widget_settings_menu"
+			android:title="@string/title_expanded_widget">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.cyanogenmod.cmparts"
+				android:targetClass="com.cyanogenmod.cmparts.activities.UIPowerWidgetActivity" />
+		</PreferenceScreen>
+
+        <PreferenceScreen android:key="ui_status_bar_menu"
+            android:title="@string/ui_status_bar_title">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.UIStatusBarActivity" />
+        </PreferenceScreen>
+
+		<!-- LED notifications -->
+		<PreferenceScreen android:key="trackball_notifications"
+			android:title="@string/trackball_title" android:summary="@string/trackball_summary">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.cyanogenmod.cmparts"
+				android:targetClass="com.cyanogenmod.cmparts.activities.led.NotificationActivity" />
+		</PreferenceScreen>
+
+		<!-- Render effect -->
+		<ListPreference android:key="pref_render_effect"
+			android:dialogTitle="@string/pref_render_effect_title" android:title="@string/pref_render_effect_title"
+			android:summary="@string/pref_render_effect_summary" android:entries="@array/entries_render_effect"
+			android:entryValues="@array/values_render_effect" />
+
+		<CheckBoxPreference android:key="pref_pinch_reflow"
+			android:title="@string/pref_pinch_reflow_title" android:summary="@string/pref_pinch_reflow_summary" />
+
+		<CheckBoxPreference android:key="pref_share_screenshot"
+			android:title="@string/pref_share_screenshot_title" android:summary="@string/pref_share_screenshot_summary" />
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/ui_overscroll_title">
+		<ListPreference android:key="pref_overscroll_effect"
+			android:dialogTitle="@string/pref_overscroll_title" android:title="@string/pref_overscroll_title"
+			android:summary="@string/pref_overscroll_summary" android:entries="@array/pref_overscroll_effect_entries"
+			android:entryValues="@array/pref_overscroll_effect_values" />
+		<ListPreference android:key="pref_overscroll_weight"
+			android:dialogTitle="@string/pref_overscroll_weight_title"
+			android:title="@string/pref_overscroll_weight_title" android:summary="@string/pref_overscroll_weight_summary"
+			android:entries="@array/entries_overscroll_weight"
+			android:entryValues="@array/values_overscroll_weight" />
+	</PreferenceCategory>
+
+</PreferenceScreen>

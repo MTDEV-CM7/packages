@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Some spacing -->
+    <PreferenceCategory />
+
+    <!-- Note -->
+    <Preference android:title="@string/lockscreen_widgets_note_title"
+        android:summary="@string/lockscreen_widgets_note_summary" android:selectable="false" />
+
+    <PreferenceCategory android:title="@string/general_title">
+
+        <CheckBoxPreference android:key="lockscreen_always_battery"
+            android:title="@string/pref_lockscreen_always_battery_title"
+            android:summary="@string/pref_lockscreen_always_battery_summary" />
+
+        <ListPreference android:key="pref_lockscreen_widgets_layout"
+            android:dialogTitle="@string/pref_lockscreen_widgets_layout_title"
+            android:title="@string/pref_lockscreen_widgets_layout_title"
+            android:summary="@string/pref_lockscreen_widgets_layout_summary"
+            android:entries="@array/pref_lockscreen_widget_layout_entries"
+            android:entryValues="@array/pref_lockscreen_widget_layout_values"
+            android:defaultValue="0" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/lockscreen_music_title">
+        <CheckBoxPreference android:key="lockscreen_music_controls"
+            android:title="@string/pref_lockscreen_music_controls_title"
+            android:summary="@string/pref_lockscreen_music_controls_summary" />
+
+        <CheckBoxPreference android:key="pref_lockscreen_now_playing"
+            android:title="@string/pref_lockscreen_now_playing_title"
+            android:summary="@string/pref_lockscreen_now_playing_summary"
+            android:dependency="lockscreen_music_controls" />
+
+        <CheckBoxPreference android:key="pref_lockscreen_album_art"
+            android:title="@string/pref_lockscreen_album_art_title"
+            android:summary="@string/pref_lockscreen_album_art_summary"
+            android:dependency="lockscreen_music_controls" />
+
+        <ListPreference android:key="pref_lockscreen_music_headset"
+            android:dependency="lockscreen_music_controls"
+            android:dialogTitle="@string/pref_lockscreen_music_headset_title"
+            android:title="@string/pref_lockscreen_music_headset_title"
+            android:summary="@string/pref_lockscreen_music_headset_summary"
+            android:entries="@array/pref_lockscreen_music_headset_entries"
+            android:entryValues="@array/pref_lockscreen_music_headset_values" />
+
+        <CheckBoxPreference android:key="lockscreen_always_music_controls"
+            android:dependency="lockscreen_music_controls"
+            android:title="@string/pref_lockscreen_always_music_controls_title"
+            android:summary="@string/pref_lockscreen_always_music_controls_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/lockscreen_calendar_title">
+
+        <CheckBoxPreference android:key="lockscreen_calendar_alarm"
+            android:title="@string/pref_lockscreen_calendar_alarm_title"
+            android:summary="@string/pref_lockscreen_calendar_alarm_summary" />
+
+        <MultiSelectListPreference android:key="lockscreen_calendars"
+            android:dependency="lockscreen_calendar_alarm"
+            android:dialogTitle="@string/pref_lockscreen_calendars_title"
+            android:title="@string/pref_lockscreen_calendars_title"
+            android:summary="@string/pref_lockscreen_calendars_summary" />
+
+        <CheckBoxPreference android:key="lockscreen_calendar_reminders_only"
+            android:dependency="lockscreen_calendar_alarm"
+            android:title="@string/pref_lockscreen_calendar_reminders_only_title"
+            android:summary="@string/pref_lockscreen_calendar_reminders_only_summary" />
+
+        <ListPreference android:key="lockscreen_calendar_lookahead"
+            android:dependency="lockscreen_calendar_alarm"
+            android:dialogTitle="@string/pref_lockscreen_calendar_lookahead_title"
+            android:title="@string/pref_lockscreen_calendar_lookahead_title"
+            android:summary="@string/pref_lockscreen_calendar_lookahead_summary"
+            android:entries="@array/pref_lockscreen_calendar_lookahead_entries"
+            android:entryValues="@array/pref_lockscreen_calendar_lookahead_values" />
+
+        <ListPreference android:key="lockscreen_calendar_show_location"
+            android:dependency="lockscreen_calendar_alarm"
+            android:dialogTitle="@string/pref_lockscreen_calendar_show_location_title"
+            android:title="@string/pref_lockscreen_calendar_show_location_title"
+            android:summary="@string/pref_lockscreen_calendar_show_location_summary"
+            android:entries="@array/pref_lockscreen_calendar_show_event_metadata_entries"
+            android:entryValues="@array/pref_lockscreen_calendar_show_event_metadata_values" />
+
+        <ListPreference android:key="lockscreen_calendar_show_description"
+            android:dependency="lockscreen_calendar_alarm"
+            android:dialogTitle="@string/pref_lockscreen_calendar_show_description_title"
+            android:title="@string/pref_lockscreen_calendar_show_description_title"
+            android:summary="@string/pref_lockscreen_calendar_show_description_summary"
+            android:entries="@array/pref_lockscreen_calendar_show_event_metadata_entries"
+            android:entryValues="@array/pref_lockscreen_calendar_show_event_metadata_values" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

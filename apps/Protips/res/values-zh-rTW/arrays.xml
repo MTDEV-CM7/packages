@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="tips">
+
+        <!-- Tip: Where the launcher icon is and what it does. With icon. -->
+        <item msgid="4457112202911142877">"查看您的所有應用程式。"\n" 點一下 [啟動器] 圖示。@drawable/all_apps"</item>
+
+        <!-- Tip: How to survive in CyanogenMod. -->
+        <item>法則\n
+        CyanogenMod 唯一的法則：您不追問預計完成日期。</item>
+
+        <!-- Tip: How to get nightly builds. -->
+        <item>夜夜版本（進階）\n
+        能在 ROM Manager 中取得。別在 Google Code 回報這些版本的問題。 @drawable/rommanager</item>
+
+        <!-- Tip: Longpress in Launcher (all apps) to drag apps to the home screen. -->
+        <item msgid="8842580895829057430">"將應用程式拖至主螢幕。"\n"輕觸並按住應用程式啟動器中的某個應用程式直到震動。"</item>
+        
+        <!-- Tip: DrKmobs -->
+        <item>不要聽從 Dr Kmobs\n
+        他可不是真正的醫生，而那枝亦不是體溫計。 @drawable/stethoscope</item>
+
+        <!-- Tip: Longpress to move icons/widgets around. -->
+        <item msgid="8903218961940756528">"重新整理手機主頁。"\n" 按住項目直至手機震動，然後把該項目拖曳至新的位置。"</item>
+        
+        <!-- Tip: Teach them how to become better programmers -->
+        <item>Ballmer 尖峰\n
+        讓編寫程式能力最佳化的血液中酒精含量介乎 .129 與 .138 之間。</item>
+
+        <!-- Tip: Longpress icons/widgets and drag to trash to remove them. -->
+        <item msgid="3123213860439458492">"移除項目。"\n" 按住項目直至手機震動，然後把該項目拖曳至垃圾桶圖示。@drawable/trash"</item>
+        <!-- Tip: Explain what is wrong with the iPhone. -->
+        <item>iPhone\n
+        您掌握錯了，通常都是。</item>
+
+        <!-- Tip: Swipe to switch workspaces; drag items to move them to other
+             workspaces. -->
+        <item msgid="1000948398885889319">"多個手機主頁。"\n" 用手指在螢幕上左右滑動，並把項目拖曳至其他畫面。"</item>
+        <!-- Tip: Winzip must be kept up to date. -->
+        <item>頭號優先處理\n
+        別忘了經常維持您的 winzip 版本更新。</item>
+
+        <!-- Tip: Find out what it means to kang. -->
+        <item>Kang [kayng] - （動詞）\n
+        更新好我的 winzip 了，巴打。多得我的女人有耐性容忍我的開發。 @drawable/kang_truck</item>
+
+        <!-- Tip: The Definition of Open. -->
+        <item>開放的定義\n
+        repo init -u git://android.git.kernel.org/platform/manifest.git ; repo sync ; make. @drawable/android_open </item>
+
+        <!-- Tip: A tribute to Cyanogen's cat -->
+        <item>貓出沒注意\n
+        為您的電子產品做足防貓措施，貓咪們是勢必在其上撒尿的。 @drawable/cat_attack</item>
+
+        <!-- Tip: Reminder about how to delete widgets, reinforcing that this
+             technique can be used to remove the tips widget iteself. -->
+        <item msgid="424487960942281801">"不需要這個小工具了嗎？"\n" 按住小工具直至手機震動，然後把該小工具拖曳至垃圾桶圖示。"</item>
+  </string-array>
+</resources>

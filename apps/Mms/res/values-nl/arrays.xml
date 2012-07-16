@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2008 Esmertec AG.
+      Copyright (C) 2008 The Android Open Source Project
+      Copyright (C) 2012 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="default_smiley_names">
+    <item msgid="1831934949361041701">"Blij"</item>
+    <item msgid="1601611480575517120">"Bedroefd"</item>
+    <item msgid="1531181614218625881">"Knipoog"</item>
+    <item msgid="3858808057949077894">"Tong uitsteken"</item>
+    <item msgid="7835238297967185651">"Verrast"</item>
+    <item msgid="1756223535005296033">"Kussend"</item>
+    <item msgid="1093906245140165107">"Schreeuwend"</item>
+    <item msgid="888834839864150170">"Gaaf"</item>
+    <item msgid="6320683740534773967">"Geldzoeker"</item>
+    <item msgid="6610111212478853990">"Mond vol tanden"</item>
+    <item msgid="1706035208563940251">"Beschaamd"</item>
+    <item msgid="9079275787422313427">"Engel"</item>
+    <item msgid="4630490399784004880">"Twijfelend"</item>
+    <item msgid="7002574538342357456">"Huilend"</item>
+    <item msgid="850324578089267455">"Lippen op elkaar"</item>
+    <item msgid="6334637439528489607">"Lachend"</item>
+    <item msgid="7602915122893958066">"Verward"</item>
+  </string-array>
+  <string-array name="pref_mms_user_agent_entries">
+    <item>Standaard Android</item>
+    <item>Nokia N95</item>
+    <item>iPhone (3.0)</item>
+    <item>BlackBerry 8800</item>
+    <item>Sony Ericsson W800i</item>
+    <item>SoftBank X01T</item>
+    <item>@string/pref_mms_custom_option</item>
+  </string-array>
+  <string-array name="pref_mms_message_font_size_entries">
+    <item>10</item>
+    <item>12</item>
+    <item>14</item>
+    <item>16</item>
+    <item>18 (standaard)</item>
+    <item>20</item>
+  </string-array>
+  <string-array name="pref_mms_notification_vibrate_pattern_entries">
+    <item>Normaal</item>
+    <item>Gemiddeld</item>
+    <item>Lang</item>
+    <item>Meerdere kort</item>
+    <item>Meerdere lang</item>
+    <item>@string/pref_mms_custom_option</item>
+  </string-array>
+  <string-array name="pref_templates_gestures_sensitivity_entries">
+    <item>1 (minst gevoelig)</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12 (gevoeligst)</item>
+  </string-array>
+</resources>
