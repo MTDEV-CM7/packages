@@ -78,7 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:textSize="90sp"
+                android:textSize="70sp"
                 android:text="@string/alarm_alert_snooze_text" />
 
             <!-- blank stretchable view -->
@@ -91,7 +91,7 @@
 
             <Button
                 android:id="@+id/dismiss"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:text="@string/alarm_alert_dismiss_text" />
