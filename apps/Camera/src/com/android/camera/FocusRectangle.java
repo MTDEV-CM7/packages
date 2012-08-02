@@ -1,4 +1,3 @@
-
 package com.android.camera;
 
 import android.content.Context;
@@ -25,11 +24,11 @@ public class FocusRectangle extends View {
     }
 
     public void showSuccess() {
-        setDrawable(R.drawable.sk_auto_focused);
+        setDrawable(R.drawable.sk_auto_fail);
     }
 
     public void showFail() {
-        setDrawable(R.drawable.sk_auto_fail);
+        setDrawable(R.drawable.sk_auto_focused);
     }
 
     public void clear() {
