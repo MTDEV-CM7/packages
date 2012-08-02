@@ -49,6 +49,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.os.MessageQueue;
+import android.os.SystemProperties;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.text.format.DateFormat;
@@ -71,7 +72,6 @@ import android.view.MenuItem.OnMenuItemClickListener;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.android.camera.dcim.DCIMHelper;
 import com.android.camera.gallery.IImage;
 import com.android.camera.gallery.IImageList;
 import com.android.camera.ui.CameraHeadUpDisplay;
@@ -125,6 +125,11 @@ public class Camera extends BaseCamera implements View.OnClickListener,
     private static final int ZOOM_STOPPED = 0;
     private static final int ZOOM_START = 1;
     private static final int ZOOM_STOPPING = 2;
+
+    // Property that indicates that the device screen is rotated by default
+    // Necesary to adjust the rotation of pictures/movies (0, 90, 180, 270)
+    private static final int mDeviceScreenRotation =
+       SystemProperties.getInt("ro.device.screenrotation", 0);
 
     private int mZoomState = ZOOM_STOPPED;
     private boolean mSmoothZoomSupported = false;
@@ -361,7 +366,6 @@ public class Camera extends BaseCamera implements View.OnClickListener,
         queue.addIdleHandler(new MessageQueue.IdleHandler() {
             public boolean queueIdle() {
                 ImageManager.ensureOSXCompatibleFolder();
-                DCIMHelper.convertToDCIM();
                 return false;
             }
         });
@@ -749,7 +753,7 @@ public class Camera extends BaseCamera implements View.OnClickListener,
         private int storeImage(byte[] data, Location loc) {
             try {
                 long dateTaken = System.currentTimeMillis();
-                String title = /*createName(dateTaken)*/DCIMHelper.getNameForNewImage();
+                String title = createName(dateTaken);
                 String fileExtension = "jpg";
                 String picFormat = mParameters.get("picture-format");
                 if (picFormat != null &&
@@ -763,8 +767,8 @@ public class Camera extends BaseCamera implements View.OnClickListener,
                         title,
                         dateTaken,
                         loc, // location from gps/network
-
-                        /*ImageManager.CAMERA_IMAGE_BUCKET_NAME*/DCIMHelper.getDirectoryForNewImage(), filename,
+                        ImageManager.getCameraImageDirectory(),
+                        filename,
                         null, data,
                         degree);
                 return degree[0];
@@ -818,10 +822,9 @@ public class Camera extends BaseCamera implements View.OnClickListener,
                 CameraInfo info = CameraHolder.instance().getCameraInfo()[mCameraId];
                 if (info.facing == CameraInfo.CAMERA_FACING_FRONT &&
                         info.orientation != 90) {
-            		Log.v(TAG, "Rotation " + info.orientation + " mOrientation " + mOrientation);
-                    rotation = (info.orientation - mOrientation + 360) % 360;
+                    rotation = (info.orientation - mOrientation + mDeviceScreenRotation + 360) % 360;
                 } else {  // back-facing camera (or acting like it)
-                    rotation = (info.orientation + mOrientation) % 360;
+                    rotation = (info.orientation + mOrientation  - mDeviceScreenRotation) % 360;
                 }
             }
             mParameters.setRotation(rotation);
@@ -1729,7 +1732,15 @@ public class Camera extends BaseCamera implements View.OnClickListener,
             // focus here.
             mFocusState = FOCUSING_SNAP_ON_FINISH;
         } else if (mFocusState == FOCUS_NOT_STARTED) {
-            // Focus key down event is dropped for some reasons. Just ignore.
+            // Special case: some devices have a one-stage-only camera button.
+            // In those cases, a simple push has to do the trick.
+            if (getResources().getBoolean(R.bool.isOneStageButton)) {
+                doFocus(true);
+                mFocusState = FOCUSING_SNAP_ON_FINISH;
+            }
+
+            // Most of the time, the focus key down event will be invoked
+            // for some reason. Just ignore.
         }
     }
 
@@ -1843,7 +1854,7 @@ public class Camera extends BaseCamera implements View.OnClickListener,
             dataLocation(),
             ImageManager.INCLUDE_IMAGES,
             ImageManager.SORT_ASCENDING,
-            ImageManager.CAMERA_IMAGE_BUCKET_ID());
+            ImageManager.getCameraImageBucketId());
         int count = list.getCount();
         if (count > 0) {
             IImage image = list.getImageAt(count - 1);

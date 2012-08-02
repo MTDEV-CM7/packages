@@ -16,7 +16,6 @@
 
 package com.android.camera;
 
-import com.android.camera.dcim.DCIMHelper;
 import com.android.camera.gallery.IImage;
 import com.android.camera.gallery.IImageList;
 import com.android.camera.ui.CamcorderHeadUpDisplay;
@@ -52,6 +51,7 @@ import android.os.ParcelFileDescriptor;
 import android.os.Message;
 import android.os.StatFs;
 import android.os.SystemClock;
+import android.os.SystemProperties;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.provider.MediaStore.Video;
@@ -124,6 +124,11 @@ public class VideoCamera extends BaseCamera
     private int mZoomMax;
     private GestureDetector mGestureDetector;
     private final ZoomListener mZoomListener = new ZoomListener();
+
+    // Property that indicates that the device screen is rotated by default
+    // Necesary to adjust the rotation of pictures/movies (0, 90, 180, 270)
+    private static final int mDeviceScreenRotation =
+       SystemProperties.getInt("ro.device.screenrotation", 0);
 
     /**
      * An unpublished intent flag requesting to start recording straight away
@@ -769,6 +774,10 @@ public class VideoCamera extends BaseCamera
             closeCamera();
             throw new RuntimeException("startPreview failed", ex);
         }
+
+        if (CameraSettings.isCamcoderFocusAtStart()) {
+            mCameraDevice.autoFocus(null);
+        }
     }
 
     private void closeCamera() {
@@ -1114,9 +1123,9 @@ public class VideoCamera extends BaseCamera
         if (mOrientation != OrientationEventListener.ORIENTATION_UNKNOWN) {
             CameraInfo info = CameraHolder.instance().getCameraInfo()[mCameraId];
             if (info.facing == CameraInfo.CAMERA_FACING_FRONT) {
-                rotation = (info.orientation - mOrientation + 360) % 360;
+                rotation = (info.orientation - mOrientation + mDeviceScreenRotation + 360) % 360;
             } else {  // back-facing camera
-                rotation = (info.orientation + mOrientation) % 360;
+                rotation = (info.orientation + mOrientation - mDeviceScreenRotation) % 360;
             }
         }
         mMediaRecorder.setOrientationHint(rotation);
@@ -1151,10 +1160,10 @@ public class VideoCamera extends BaseCamera
 
     private void createVideoPath() {
         long dateTaken = System.currentTimeMillis();
-        String title = /*createName(dateTaken)*/DCIMHelper.getNameForNewVideo();
+        String title = createName(dateTaken);
         String filename = title + 
             (MediaRecorder.OutputFormat.MPEG_4 == mProfile.fileFormat ? ".m4v" : ".3gp"); // Used when emailing.
-        String cameraDirPath = /*ImageManager.CAMERA_IMAGE_BUCKET_NAME*/DCIMHelper.getDirectoryForNewImage();
+        String cameraDirPath = ImageManager.getCameraImageDirectory();
         String filePath = cameraDirPath + "/" + filename;
         File cameraDir = new File(cameraDirPath);
         cameraDir.mkdirs();
@@ -1331,6 +1340,9 @@ public class VideoCamera extends BaseCamera
             return;
         }
 
+        if (CameraSettings.isCamcoderFocusAtStart()) {
+            mCameraDevice.autoFocus(null);
+        }
         CameraSettings.setContinuousAf(mParameters, true);
         setCameraHardwareParameters();
 
@@ -1529,7 +1541,7 @@ public class VideoCamera extends BaseCamera
                         dataLocation(),
                         ImageManager.INCLUDE_VIDEOS,
                         ImageManager.SORT_ASCENDING,
-                        ImageManager.CAMERA_IMAGE_BUCKET_ID());
+                        ImageManager.getCameraImageBucketId());
         int count = list.getCount();
         if (count > 0) {
             IImage image = list.getImageAt(count - 1);
