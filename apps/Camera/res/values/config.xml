@@ -24,10 +24,6 @@
 	     library is for some reason unavailable -->
 	<bool name="softwareGLOnly">false</bool>
 
-        <!-- Autofocus parameters -->
-        <string name="touchFocusParameter"></string>
-        <bool name="touchFocusNeedsRect">false</bool>
-
 	<!-- FFC parameter filtering -->
 	<bool name="ffc_canFocus">true</bool>
 	<bool name="ffc_canZoom">true</bool>
@@ -50,14 +46,4 @@
 
 	<!-- Samsung Special Settings -->
 	<bool name="needsSamsungSpecialSettings">false</bool>
-
-	<!-- is OMAP4 camera -->
-	<bool name="isOMAP4Camera">false</bool>
-
-        <!-- Autofocus on camcorder start -->
-        <bool name="focusCamcorderAtStart">true</bool>
-
-        <!-- One-stage camera button -->
-	<bool name="isOneStageButton">false</bool>
-
 </resources>
