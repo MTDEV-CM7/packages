@@ -65,7 +65,7 @@ public class AlarmClock extends Activity implements OnItemClickListener {
     private ListView mAlarmsList;
     private Cursor mCursor;
 
-    private void updateIndicatorAndAlarm(boolean enabled, ImageView bar,
+    private void updateIndicatorAndAlarm(boolean disabled, ImageView bar,
             Alarm alarm) {
         bar.setImageResource(enabled ? R.drawable.ic_indicator_on
                 : R.drawable.ic_indicator_off);
