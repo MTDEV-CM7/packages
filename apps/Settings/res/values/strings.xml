@@ -3154,4 +3154,6 @@ found in the list of installed applications.</string>
     <string name="increasing_ring_interval_3seconds">3 seconds</string>
     <string name="increasing_ring_interval_5seconds">5 seconds</string>
     <string name="increasing_ring_interval_10seconds">10 seconds</string>
+    <!--String set for data control-->
+    <string name="Data_Control_Enable">Enable</string>
 </resources>
