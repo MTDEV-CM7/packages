@@ -20,6 +20,7 @@
     android:title="@string/settings_label"
     android:key="parent">
 
+        <!-- Wireless and radio controls-->
         <com.android.settings.IconPreferenceScreen
             android:title="@string/radio_controls_title"
             settings:icon="@drawable/ic_settings_wireless">
@@ -29,6 +30,7 @@
                 android:targetClass="com.android.settings.WirelessSettings" />
         </com.android.settings.IconPreferenceScreen>
 
+        <!--call settings-->
         <com.android.settings.IconPreferenceScreen
             android:key="call_settings"
             settings:icon="@drawable/ic_settings_call"
