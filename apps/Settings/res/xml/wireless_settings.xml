@@ -23,6 +23,18 @@
         android:persistent="false"
         android:disableDependentsState="true" />
 
+     <!--Data controls-->
+    <PreferenceScreen
+        android:key="Data_Control"
+        android:title="@string/Data_Control"
+        android:summary="@string/Data_Control_summary" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.data.DataControl" />
+    </PreferenceScreen>
+
+
     <!-- Programmatically will have dynamic summary, but we provide the fallback summary. -->
     <CheckBoxPreference
         android:key="toggle_wifi"
