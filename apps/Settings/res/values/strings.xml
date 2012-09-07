@@ -3158,5 +3158,8 @@ found in the list of installed applications.</string>
     <!--String set for data control-->
     <string name="Data_Control">Data Control</string>
     <string name="Data_Control_Summary">Control when your phone can access data, can save battery life.</string>
+    <string name="Data_quick_toggle_title">Data Controls</string>
+    <string name="Data_quick_toggle_summary">Control your data</string>
     <string name="Data_Control_Enable">Enable</string>
+
 </resources>
