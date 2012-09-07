@@ -24,6 +24,12 @@
         android:disableDependentsState="true" />
 
      <!--Data controls-->
+    <CheckBoxPreference
+        android:key="toggle_DataControl"
+        android:title="@string/Data_quick_toggle_title"
+        android:summary="@string/Data_quick_toggle_summary"
+        android:persistent="false" />
+
     <PreferenceScreen
         android:key="Data_Control"
         android:title="@string/Data_Control"
